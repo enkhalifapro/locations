@@ -16,3 +16,5 @@ run:
 	./$(SERVER_BINARY)
 build-docker:
 	docker build . -t locations
+run-docker:
+	docker run -p 9000:8000 locations
