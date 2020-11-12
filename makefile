@@ -14,4 +14,5 @@ gen:
 	goa gen locations/api/design
 run:
 	./$(SERVER_BINARY)
-
+build-docker:
+	docker build . -t locations
