@@ -6,9 +6,9 @@ import (
 
 var _ = API("location", func() {
 	Title("Location Service")
-	Description("Service for manipulate user location")
+	Description("Service for manipulate locations")
 	Server("location", func() {
-		Description("user hosts the User Service.")
+		Description("location hosts the Locations Service.")
 
 		// List the services hosted by this server.
 		Services("locations", "openapi")
@@ -35,34 +35,19 @@ var _ = API("location", func() {
 	})
 })
 
-// User type
+// Location type
 var Location = Type("Location", func() {
 	Description("Describe location properties.")
 	Field(1, "country", String, "User country", func() {
-		Pattern(`.+@.+\..{1,6}`)
-		Example("ehabterra@hotmail.com")
+		Example("Egypt")
 	})
 	Field(2, "date", String, "User current date", func() {
-		MaxLength(100)
-		Example("Ehab")
+		Example("dd-mm-yyyy")
 	})
 	Field(3, "time", String, "User current time", func() {
-		MaxLength(100)
-		Example("Terra")
+		Example("hh:mm:ss")
 	})
 	Required("country", "date", "time")
-})
-
-// NotFound type
-var NotFound = Type("NotFound", func() {
-	Description("NotFound is the type returned when attempting to show or delete a user that does not exist.")
-	Attribute("message", String, "Message of error", func() {
-		Meta("struct:error:name")
-		Example("user 1 not found")
-		Meta("rpc:tag", "1")
-	})
-	Field(2, "id", String, "ID of missing user")
-	Required("message", "id")
 })
 
 var _ = Service("locations", func() {
@@ -73,15 +58,16 @@ var _ = Service("locations", func() {
 	})
 
 	Method("now", func() {
-		Description("List all stored users")
-		/*Payload(func() {
-			Field(1, "view", String, "View to render", func() {
-				Enum("default", "tiny")
-			})
-		})*/
+		Description("Get client IP location")
+		Payload(func() {
+			Attribute("X-Forwarded-For", String)
+		})
 		Result(Location)
 		HTTP(func() {
 			GET("/now")
+			Headers(func() {
+				Header("X-Forwarded-For", String)
+			})
 			Response(StatusOK)
 		})
 	})

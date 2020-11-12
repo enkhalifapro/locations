@@ -9,7 +9,6 @@ package client
 
 import (
 	locations "locations/gen/locations"
-	"unicode/utf8"
 
 	goa "goa.design/goa/v3/pkg"
 )
@@ -47,19 +46,6 @@ func ValidateNowResponseBody(body *NowResponseBody) (err error) {
 	}
 	if body.Time == nil {
 		err = goa.MergeErrors(err, goa.MissingFieldError("time", "body"))
-	}
-	if body.Country != nil {
-		err = goa.MergeErrors(err, goa.ValidatePattern("body.country", *body.Country, ".+@.+\\..{1,6}"))
-	}
-	if body.Date != nil {
-		if utf8.RuneCountInString(*body.Date) > 100 {
-			err = goa.MergeErrors(err, goa.InvalidLengthError("body.date", *body.Date, utf8.RuneCountInString(*body.Date), 100, false))
-		}
-	}
-	if body.Time != nil {
-		if utf8.RuneCountInString(*body.Time) > 100 {
-			err = goa.MergeErrors(err, goa.InvalidLengthError("body.time", *body.Time, utf8.RuneCountInString(*body.Time), 100, false))
-		}
 	}
 	return
 }

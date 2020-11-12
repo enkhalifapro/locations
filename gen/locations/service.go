@@ -13,8 +13,8 @@ import (
 
 // The location service gets user current country, date and time.
 type Service interface {
-	// List all stored users
-	Now(context.Context) (res *Location, err error)
+	// Get client IP location
+	Now(context.Context, *NowPayload) (res *Location, err error)
 }
 
 // ServiceName is the name of the service as defined in the design. This is the
@@ -26,6 +26,11 @@ const ServiceName = "locations"
 // are the same values that are set in the endpoint request contexts under the
 // MethodKey key.
 var MethodNames = [1]string{"now"}
+
+// NowPayload is the payload type of the locations service now method.
+type NowPayload struct {
+	XForwardedFor *string
+}
 
 // Location is the result type of the locations service now method.
 type Location struct {

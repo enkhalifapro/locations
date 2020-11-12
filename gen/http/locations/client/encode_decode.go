@@ -11,6 +11,7 @@ import (
 	"bytes"
 	"context"
 	"io/ioutil"
+	locations "locations/gen/locations"
 	"net/http"
 	"net/url"
 
@@ -30,6 +31,22 @@ func (c *Client) BuildNowRequest(ctx context.Context, v interface{}) (*http.Requ
 	}
 
 	return req, nil
+}
+
+// EncodeNowRequest returns an encoder for requests sent to the locations now
+// server.
+func EncodeNowRequest(encoder func(*http.Request) goahttp.Encoder) func(*http.Request, interface{}) error {
+	return func(req *http.Request, v interface{}) error {
+		p, ok := v.(*locations.NowPayload)
+		if !ok {
+			return goahttp.ErrInvalidType("locations", "now", "*locations.NowPayload", v)
+		}
+		if p.XForwardedFor != nil {
+			head := *p.XForwardedFor
+			req.Header.Set("X-Forwarded-For", head)
+		}
+		return nil
+	}
 }
 
 // DecodeNowResponse returns a decoder for responses returned by the locations

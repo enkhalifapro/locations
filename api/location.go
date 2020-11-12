@@ -2,26 +2,48 @@ package api
 
 import (
 	"context"
-	"fmt"
 	"locations/gen/locations"
+	"locations/pkg"
 )
 
 // Location api implementation.
 type Location struct {
+	locationManager LocationManager
 }
 
-// NewUser returns the users service implementation.
-func NewLocation() *Location {
+// LocationManager ...
+type LocationManager interface {
+	GetIPLocation(ip string) (*pkg.Location, error)
+}
+
+// NewLocation returns the location service implementation.
+func NewLocation(mgr LocationManager) *Location {
 	// Build and return service implementation.
-	return &Location{}
+	return &Location{
+		locationManager: mgr,
+	}
 }
 
 // Now
-func (s *Location) Now(context.Context) (res *locations.Location, err error) {
-	fmt.Println("in nowwwww")
+func (s *Location) Now(ctx context.Context, p *locations.NowPayload) (res *locations.Location, err error) {
+	if p.XForwardedFor == nil {
+		// todo: enable the next line when finish debug
+		// return nil, errors.New("IP not found")
+	}
+	// todo: enable the next line when finish debug
+	// ip := *p.XForwardedFor
+
+	// todo: remove the next line later
+	ip := "207.46.197.32"
+
+	loc, err := s.locationManager.GetIPLocation(ip)
+	if err != nil {
+		return nil, err
+	}
+
 	return &locations.Location{
-		Country: "Egypt",
-		Date:    "date",
-		Time:    "time",
+		Country: loc.Country,
+		Date:    loc.Date,
+		Time:    loc.Time,
 	}, nil
 }

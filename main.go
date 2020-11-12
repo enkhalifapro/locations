@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"locations/api"
 	"locations/gen/locations"
+	"locations/internal/location"
+	"locations/pkg"
 
 	"log"
 	"net/url"
@@ -34,11 +36,12 @@ func main() {
 		logger *log.Logger
 	)
 	{
-		logger = log.New(os.Stderr, "[user-manager] ", log.Ltime)
+		logger = log.New(os.Stderr, "[location-manager] ", log.Ltime)
 	}
 
-	// todo: Initialize the services.
-	locationAPI := api.NewLocation()
+	ipManager := pkg.NewIPManager()
+	locationManager := location.NewManager(ipManager)
+	locationAPI := api.NewLocation(locationManager)
 	locationsEndpoints := locations.NewEndpoints(locationAPI)
 
 	// Create channel used by both the signal handler and server goroutines

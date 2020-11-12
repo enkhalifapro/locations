@@ -2,41 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2356d0d1-7061-4d81-a043-7bf639018b9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/users.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/design/location.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/location.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/location/manager.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/oauth2-redirect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-es-bundle-core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-es-bundle-core.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-es-bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-es-bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-standalone-preset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui-standalone-preset.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/swagger/swagger-ui.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ip_utll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/design/location.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/design/location.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/location.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/location.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/client/cli.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/client/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/client/encode_decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/client/paths.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/client/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/server/encode_decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/server/paths.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/server/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/locations/server/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi/client/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi/client/encode_decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi/client/paths.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi/client/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi/server/paths.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi/server/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi/server/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/http/openapi3.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/locations/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/locations/endpoints.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/locations/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/openapi/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/openapi/endpoints.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/openapi/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/location/manager.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/location/manager.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,16 @@
       <recent name="$PROJECT_DIR$/internal/authenticator" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="users" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="locations" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestManager_Remove in users/internal/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="users" />
       <working_directory value="$PROJECT_DIR$/internal/user" />
@@ -136,14 +145,11 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,38 +195,42 @@
       <screen x="55" y="27" width="1311" height="741" />
     </state>
     <state x="455" y="140" width="501" height="513" key="FileChooserDialogImpl/55.27.1311.741@55.27.1311.741" timestamp="1600080772405" />
-    <state width="1238" height="225" key="GridCell.Tab.0.bottom" timestamp="1599756036577">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1750" height="272" key="GridCell.Tab.0.bottom" timestamp="1605140396893">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.bottom/0.23.1280.715@0.23.1280.715" timestamp="1599500483747" />
     <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.23.1280.717@0.23.1280.717" timestamp="1599475529442" />
     <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1599647039934" />
     <state width="1238" height="225" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1599756036577" />
     <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1599653065312" />
-    <state width="1238" height="225" key="GridCell.Tab.0.center" timestamp="1599756036577">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1750" height="272" key="GridCell.Tab.0.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396893" />
+    <state width="1750" height="272" key="GridCell.Tab.0.center" timestamp="1605140396892">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.center/0.23.1280.715@0.23.1280.715" timestamp="1599500483746" />
     <state width="1238" height="223" key="GridCell.Tab.0.center/0.23.1280.717@0.23.1280.717" timestamp="1599475529441" />
     <state width="1238" height="223" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1599647039933" />
     <state width="1238" height="225" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1599756036577" />
     <state width="1238" height="223" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1599653065311" />
-    <state width="1238" height="225" key="GridCell.Tab.0.left" timestamp="1599756036576">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1750" height="272" key="GridCell.Tab.0.center/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396892" />
+    <state width="1750" height="272" key="GridCell.Tab.0.left" timestamp="1605140396892">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.left/0.23.1280.715@0.23.1280.715" timestamp="1599500483745" />
     <state width="1238" height="223" key="GridCell.Tab.0.left/0.23.1280.717@0.23.1280.717" timestamp="1599475529441" />
     <state width="1238" height="223" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1599647039930" />
     <state width="1238" height="225" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1599756036576" />
     <state width="1238" height="223" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1599653065311" />
-    <state width="1238" height="225" key="GridCell.Tab.0.right" timestamp="1599756036577">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1750" height="272" key="GridCell.Tab.0.left/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396892" />
+    <state width="1750" height="272" key="GridCell.Tab.0.right" timestamp="1605140396893">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.right/0.23.1280.715@0.23.1280.715" timestamp="1599500483746" />
     <state width="1238" height="223" key="GridCell.Tab.0.right/0.23.1280.717@0.23.1280.717" timestamp="1599475529442" />
     <state width="1238" height="223" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1599647039933" />
     <state width="1238" height="225" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1599756036577" />
     <state width="1238" height="223" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1599653065312" />
+    <state width="1750" height="272" key="GridCell.Tab.0.right/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396893" />
     <state width="1238" height="215" key="GridCell.Tab.1.bottom" timestamp="1599731751426">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -256,11 +266,12 @@
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="399" y="168" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.23.1280.724@0.23.1280.724" timestamp="1599926592515" />
-    <state x="479" y="23" width="835" height="1024" key="find.popup" timestamp="1605050156425">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state x="479" y="23" width="835" height="1028" key="find.popup" timestamp="1605140396723">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state x="342" y="23" width="596" height="715" key="find.popup/0.23.1280.715@0.23.1280.715" timestamp="1599130414074" />
     <state x="479" y="23" width="835" height="1024" key="find.popup/0.23.1792.1024@0.23.1792.1024" timestamp="1605050156425" />
+    <state x="479" y="23" width="835" height="1028" key="find.popup/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396723" />
     <state width="600" height="447" key="javadoc.popup" timestamp="1599656740584">
       <screen x="0" y="23" width="1280" height="723" />
     </state>

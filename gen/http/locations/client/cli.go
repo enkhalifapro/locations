@@ -6,3 +6,22 @@
 // $ goa gen locations/api/design
 
 package client
+
+import (
+	locations "locations/gen/locations"
+)
+
+// BuildNowPayload builds the payload for the locations now endpoint from CLI
+// flags.
+func BuildNowPayload(locationsNowXForwardedFor string) (*locations.NowPayload, error) {
+	var xForwardedFor *string
+	{
+		if locationsNowXForwardedFor != "" {
+			xForwardedFor = &locationsNowXForwardedFor
+		}
+	}
+	v := &locations.NowPayload{}
+	v.XForwardedFor = xForwardedFor
+
+	return v, nil
+}

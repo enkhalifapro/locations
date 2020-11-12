@@ -1,13 +1,13 @@
 openapi: 3.0.3
 info:
   title: Location Service
-  description: Service for manipulate user location
+  description: Service for manipulate locations
   version: "1.0"
 servers:
 - url: http://localhost:8000
-  description: user hosts the User Service.
+  description: location hosts the Locations Service.
 - url: https://v1.goa.design
-  description: user hosts the User Service.
+  description: location hosts the Locations Service.
   variables:
     version:
       default: v1
@@ -17,8 +17,16 @@ paths:
       tags:
       - locations
       summary: now locations
-      description: List all stored users
+      description: Get client IP location
       operationId: locations#now
+      parameters:
+      - name: X-Forwarded-For
+        in: header
+        allowEmptyValue: true
+        schema:
+          type: string
+          example: Beatae nostrum sit numquam mollitia qui.
+        example: Pariatur quia sed aut voluptatem rem dolorum.
       responses:
         "200":
           description: ""
@@ -27,9 +35,9 @@ paths:
               schema:
                 $ref: '#/components/schemas/Location'
               example:
-                country: ehabterra@hotmail.com
-                date: Ehab
-                time: Terra
+                country: Egypt
+                date: dd-mm-yyyy
+                time: hh:mm:ss
 components:
   schemas:
     Location:
@@ -38,22 +46,19 @@ components:
         country:
           type: string
           description: User country
-          example: ehabterra@hotmail.com
-          pattern: .+@.+\..{1,6}
+          example: Egypt
         date:
           type: string
           description: User current date
-          example: Ehab
-          maxLength: 100
+          example: dd-mm-yyyy
         time:
           type: string
           description: User current time
-          example: Terra
-          maxLength: 100
+          example: hh:mm:ss
       example:
-        country: ehabterra@hotmail.com
-        date: Ehab
-        time: Terra
+        country: Egypt
+        date: dd-mm-yyyy
+        time: hh:mm:ss
       required:
       - country
       - date

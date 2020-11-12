@@ -26,3 +26,20 @@ func EncodeNowResponse(encoder func(context.Context, http.ResponseWriter) goahtt
 		return enc.Encode(body)
 	}
 }
+
+// DecodeNowRequest returns a decoder for requests sent to the locations now
+// endpoint.
+func DecodeNowRequest(mux goahttp.Muxer, decoder func(*http.Request) goahttp.Decoder) func(*http.Request) (interface{}, error) {
+	return func(r *http.Request) (interface{}, error) {
+		var (
+			xForwardedFor *string
+		)
+		xForwardedForRaw := r.Header.Get("X-Forwarded-For")
+		if xForwardedForRaw != "" {
+			xForwardedFor = &xForwardedForRaw
+		}
+		payload := NewNowPayload(xForwardedFor)
+
+		return payload, nil
+	}
+}

@@ -26,9 +26,9 @@ func NewClient(now goa.Endpoint) *Client {
 }
 
 // Now calls the "now" endpoint of the "locations" service.
-func (c *Client) Now(ctx context.Context) (res *Location, err error) {
+func (c *Client) Now(ctx context.Context, p *NowPayload) (res *Location, err error) {
 	var ires interface{}
-	ires, err = c.NowEndpoint(ctx, nil)
+	ires, err = c.NowEndpoint(ctx, p)
 	if err != nil {
 		return
 	}

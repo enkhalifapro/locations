@@ -32,3 +32,11 @@ func NewNowResponseBody(res *locations.Location) *NowResponseBody {
 	}
 	return body
 }
+
+// NewNowPayload builds a locations service now endpoint payload.
+func NewNowPayload(xForwardedFor *string) *locations.NowPayload {
+	v := &locations.NowPayload{}
+	v.XForwardedFor = xForwardedFor
+
+	return v
+}

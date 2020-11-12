@@ -34,6 +34,7 @@ func (e *Endpoints) Use(m func(goa.Endpoint) goa.Endpoint) {
 // service "locations".
 func NewNowEndpoint(s Service) goa.Endpoint {
 	return func(ctx context.Context, req interface{}) (interface{}, error) {
-		return s.Now(ctx)
+		p := req.(*NowPayload)
+		return s.Now(ctx, p)
 	}
 }
