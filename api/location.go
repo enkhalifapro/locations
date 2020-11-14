@@ -2,6 +2,7 @@ package api
 
 import (
 	"context"
+	"errors"
 	"locations/gen/locations"
 	"locations/pkg"
 )
@@ -25,16 +26,11 @@ func NewLocation(mgr LocationManager) *Location {
 }
 
 // Now
-func (s *Location) Now(ctx context.Context, p *locations.NowPayload) (res *locations.Location, err error) {
+func (s *Location) Now(_ context.Context, p *locations.NowPayload) (res *locations.Location, err error) {
 	if p.XForwardedFor == nil {
-		// todo: enable the next line when finish debug
-		// return nil, errors.New("IP not found")
+		return nil, errors.New("IP not found")
 	}
-	// todo: enable the next line when finish debug
-	// ip := *p.XForwardedFor
-
-	// todo: remove the next line later
-	ip := "207.46.197.32"
+	ip := *p.XForwardedFor
 
 	loc, err := s.locationManager.GetIPLocation(ip)
 	if err != nil {
