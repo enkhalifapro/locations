@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2356d0d1-7061-4d81-a043-7bf639018b9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/location_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.circleci/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/location.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/location.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,52 +64,52 @@
       <module name="users" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
       <package value="locations" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="TestManager_Remove in users/internal/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="users" />
       <working_directory value="$PROJECT_DIR$/internal/user" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="users/internal/user" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestManager_Remove\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestManager_Show in users/internal/user (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="users" />
       <working_directory value="$PROJECT_DIR$/internal/user" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="users/internal/user" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestManager_Show\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestManager_Show in users/internal/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="users" />
       <working_directory value="$PROJECT_DIR$/internal/user" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="users/internal/user" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestManager_Show\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestNow in locations/api" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="users" />
       <working_directory value="$PROJECT_DIR$/api" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="locations/api" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestNow\E$" />
       <method v="2" />
     </configuration>
@@ -179,50 +176,50 @@
       <screen x="55" y="27" width="1311" height="741" />
     </state>
     <state x="455" y="140" width="501" height="513" key="FileChooserDialogImpl/55.27.1311.741@55.27.1311.741" timestamp="1600080772405" />
-    <state width="1750" height="272" key="GridCell.Tab.0.bottom" timestamp="1605312396672">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1750" height="272" key="GridCell.Tab.0.bottom" timestamp="1605527642405">
+      <screen x="0" y="23" width="1792" height="1022" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.bottom/0.23.1280.715@0.23.1280.715" timestamp="1599500483747" />
     <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.23.1280.717@0.23.1280.717" timestamp="1599475529442" />
     <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1599647039934" />
     <state width="1238" height="225" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1599756036577" />
     <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1599653065312" />
-    <state width="1750" height="272" key="GridCell.Tab.0.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1605181151865" />
+    <state width="1750" height="272" key="GridCell.Tab.0.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1605527642405" />
     <state width="1750" height="272" key="GridCell.Tab.0.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396893" />
-    <state width="1750" height="272" key="GridCell.Tab.0.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1605312396672" />
-    <state width="1750" height="272" key="GridCell.Tab.0.center" timestamp="1605312396671">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1750" height="272" key="GridCell.Tab.0.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1605312457765" />
+    <state width="1750" height="272" key="GridCell.Tab.0.center" timestamp="1605527642404">
+      <screen x="0" y="23" width="1792" height="1022" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.center/0.23.1280.715@0.23.1280.715" timestamp="1599500483746" />
     <state width="1238" height="223" key="GridCell.Tab.0.center/0.23.1280.717@0.23.1280.717" timestamp="1599475529441" />
     <state width="1238" height="223" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1599647039933" />
     <state width="1238" height="225" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1599756036577" />
     <state width="1238" height="223" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1599653065311" />
-    <state width="1750" height="272" key="GridCell.Tab.0.center/0.23.1792.1022@0.23.1792.1022" timestamp="1605181151863" />
+    <state width="1750" height="272" key="GridCell.Tab.0.center/0.23.1792.1022@0.23.1792.1022" timestamp="1605527642404" />
     <state width="1750" height="272" key="GridCell.Tab.0.center/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396892" />
-    <state width="1750" height="272" key="GridCell.Tab.0.center/0.23.1792.1030@0.23.1792.1030" timestamp="1605312396671" />
-    <state width="1750" height="272" key="GridCell.Tab.0.left" timestamp="1605312396671">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1750" height="272" key="GridCell.Tab.0.center/0.23.1792.1030@0.23.1792.1030" timestamp="1605312457765" />
+    <state width="1750" height="272" key="GridCell.Tab.0.left" timestamp="1605527642402">
+      <screen x="0" y="23" width="1792" height="1022" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.left/0.23.1280.715@0.23.1280.715" timestamp="1599500483745" />
     <state width="1238" height="223" key="GridCell.Tab.0.left/0.23.1280.717@0.23.1280.717" timestamp="1599475529441" />
     <state width="1238" height="223" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1599647039930" />
     <state width="1238" height="225" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1599756036576" />
     <state width="1238" height="223" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1599653065311" />
-    <state width="1750" height="272" key="GridCell.Tab.0.left/0.23.1792.1022@0.23.1792.1022" timestamp="1605181151837" />
+    <state width="1750" height="272" key="GridCell.Tab.0.left/0.23.1792.1022@0.23.1792.1022" timestamp="1605527642402" />
     <state width="1750" height="272" key="GridCell.Tab.0.left/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396892" />
-    <state width="1750" height="272" key="GridCell.Tab.0.left/0.23.1792.1030@0.23.1792.1030" timestamp="1605312396671" />
-    <state width="1750" height="272" key="GridCell.Tab.0.right" timestamp="1605312396671">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1750" height="272" key="GridCell.Tab.0.left/0.23.1792.1030@0.23.1792.1030" timestamp="1605312457765" />
+    <state width="1750" height="272" key="GridCell.Tab.0.right" timestamp="1605527642405">
+      <screen x="0" y="23" width="1792" height="1022" />
     </state>
     <state width="1238" height="215" key="GridCell.Tab.0.right/0.23.1280.715@0.23.1280.715" timestamp="1599500483746" />
     <state width="1238" height="223" key="GridCell.Tab.0.right/0.23.1280.717@0.23.1280.717" timestamp="1599475529442" />
     <state width="1238" height="223" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1599647039933" />
     <state width="1238" height="225" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1599756036577" />
     <state width="1238" height="223" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1599653065312" />
-    <state width="1750" height="272" key="GridCell.Tab.0.right/0.23.1792.1022@0.23.1792.1022" timestamp="1605181151864" />
+    <state width="1750" height="272" key="GridCell.Tab.0.right/0.23.1792.1022@0.23.1792.1022" timestamp="1605527642405" />
     <state width="1750" height="272" key="GridCell.Tab.0.right/0.23.1792.1028@0.23.1792.1028" timestamp="1605140396893" />
-    <state width="1750" height="272" key="GridCell.Tab.0.right/0.23.1792.1030@0.23.1792.1030" timestamp="1605312396671" />
+    <state width="1750" height="272" key="GridCell.Tab.0.right/0.23.1792.1030@0.23.1792.1030" timestamp="1605312457765" />
     <state width="1238" height="215" key="GridCell.Tab.1.bottom" timestamp="1599731751426">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -275,11 +272,11 @@
     <state x="561" y="249" width="670" height="676" key="search.everywhere.popup/0.23.1792.1022@0.23.1792.1022" timestamp="1604926698915" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/users$go_test_users_internal_role.out" NAME="go test users/internal/role Coverage Results" MODIFIED="1599646609166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/users$Test_rolessrvc_Add_in_users_test__1_.out" NAME="Test_rolessrvc_Add in users/test (1) Coverage Results" MODIFIED="1599212727375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/users$gobench_users_test.out" NAME="gobench users/test Coverage Results" MODIFIED="1599498748860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/users$Test_rolessrvc_List_in_users_test__2_.out" NAME="Test_rolessrvc_List in users/test (2) Coverage Results" MODIFIED="1599484452723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/users$go_test_users_test.out" NAME="go test users/test Coverage Results" MODIFIED="1599498780015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/users$go_test_users_internal_role.out" NAME="go test users/internal/role Coverage Results" MODIFIED="1599646609166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/users$gobench_users_test.out" NAME="gobench users/test Coverage Results" MODIFIED="1599498748860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/users$go_test_users_internal_user.out" NAME="go test users/internal/user Coverage Results" MODIFIED="1599673157421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/users$go_test_users_test.out" NAME="go test users/test Coverage Results" MODIFIED="1599498780015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
