@@ -24,3 +24,22 @@ jobs:
             gotestsum --junitfile /tmp/test-reports/unit-tests.xml
       - store_test_results:
           path: /tmp/test-reports
+  print_hello:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - run: echo hello
+
+  print_world:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - run: echo world
+
+
+workflows:
+  welcome:
+    # Run the welcome/run job in its own container
+    jobs:
+      - print_hello
+      - print_world
