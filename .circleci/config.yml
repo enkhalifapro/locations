@@ -31,7 +31,6 @@ jobs:
       - run: echo "hello"
 
   print_world:
-    requires: print_hello
     docker:
       - image: circleci/node:13.8.0
     steps:
