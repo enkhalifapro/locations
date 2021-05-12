@@ -10,8 +10,10 @@ jobs:
   print_world:
     docker:
       - image: circleci/node:13.8.0
+    environment:
+      URL: << pipeline.project.git_url
     steps:
-      - run: echo "world"
+      - run: echo $URL
 
 
 workflows:
