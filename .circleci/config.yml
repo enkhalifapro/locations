@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Configure server
           command: |
-            ansible-playbook -i ansible/inventory.txt ansible/main.yml
+            ansible-playbook -i ansible/inventory.txt ansible/main.yml -y
 
   print_hello:
     docker:
