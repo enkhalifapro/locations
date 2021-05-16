@@ -6,7 +6,6 @@ jobs:
       - image: amazon/aws-cli
     steps:
       - checkout
-      - run: ls
       - run:
           name: create stack
           command: |
