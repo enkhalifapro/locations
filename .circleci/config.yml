@@ -9,10 +9,10 @@ jobs:
           name: create stack
           command: |
             aws cloudformation create-stack --stack-name locations \
-              --region us-east-1 \
-              --template-body file://aws-cf/template.yml \
-              --parameters file://aws-cf/template-param.json \
-              --capabilities CAPABILITY_NAMED_IAM
+            --region us-east-1 \
+            --template-body file://aws-cf/template.yml \
+            --parameters file://aws-cf/template-param.json \
+            --capabilities CAPABILITY_NAMED_IAM
 
   print_hello:
     docker:
