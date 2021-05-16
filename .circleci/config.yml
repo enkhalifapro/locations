@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Update known hosts
           command: |
-            echo '52.90.166.66 ssh-rsa 0be9d79747e7e375bb051961a48375a9' >> ~/.ssh/known_hosts
+            echo 'ec2-52-90-166-66.compute-1.amazonaws.com,52.90.166.66 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHd3comQqreUF0oWmqV0h0eeywczEvV07HDEMGrnuqiBOfXlfZgdTKX2e9aMhaZCRCYJFjcHAVgN3Jd/XiuRvtA=' >> ~/.ssh/known_hosts
       - run:
           name: Configure server
           command: |
