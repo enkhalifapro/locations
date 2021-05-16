@@ -1,6 +1,6 @@
 ---
 - name: Print env variable
-  shell: echo $PATH
+  shell: echo Ayman
   register: print_result
 
 - name: print message
