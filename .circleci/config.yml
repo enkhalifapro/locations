@@ -15,6 +15,23 @@ jobs:
             --parameters file://aws-cf/template-param.json \
             --capabilities CAPABILITY_NAMED_IAM
 
+  configure_infrastructure:
+    docker:
+      - image: python:3.7-alpine3.11
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - a1:22:a7:6d:1a:6b:17:8c:ab:40:44:6f:25:69:cc:1a
+      - run:
+          name: Install dependencies
+          command: |
+            apk add --update ansible
+      - run:
+          name: Configure server
+          command: |
+            ansible-playbook -i ansible/inventory.txt ansible/main.yml
+
   print_hello:
     docker:
       - image: circleci/node:13.8.0
@@ -40,4 +57,4 @@ workflows:
         #    - print_hello
   iaas:
     jobs:
-     - create_infrastructure
+     - configure_infrastructure
