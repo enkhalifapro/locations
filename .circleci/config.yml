@@ -28,6 +28,10 @@ jobs:
           command: |
             apk add --update ansible
       - run:
+          name: Update known hosts
+          command: |
+            echo '52.90.166.66 ssh-rsa 0be9d79747e7e375bb051961a48375a9' >> ~/.ssh/known_hosts
+      - run:
           name: Configure server
           command: |
             ansible-playbook -i ansible/inventory.txt ansible/main.yml
