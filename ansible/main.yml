@@ -1,5 +1,5 @@
 ---
-- name: Exercise #1
+- name: Exercise
   hosts: all
 
   roles:
